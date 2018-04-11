@@ -1,5 +1,17 @@
+#' profile function
+#'
+#' This function generates a radial density profile given radii and masses
+#' @param r vector with radial positions of stars
+#' @param m vector with masses of stars
+#' @param profbins number of bins
+#' @param feature.plot if TRUE plots some diagnostic plots
+#' @keywords profile, radial density profile
+#' @export
+#' @examples
+#' profile(r, m, 8)
+
 profile <- function(r, m, profbins, feature.plot=FALSE)
-{   #Generate a radial density profile
+{
     q <- quantile(r, seq(from = 0.0, to = 1.0, length.out = profbins+1))
     rc <- cut(r, breaks=q,include.lowest=TRUE) #split at quantiles of the radius
     if(anyNA(rc)) stop("Binning generated NAs.")

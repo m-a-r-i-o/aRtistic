@@ -1,3 +1,12 @@
+#' read_ext_snap function
+#'
+#' This function reads a MOCCA extended snapshot
+#' @param path path where the snapshot is supposed to be
+#' @keywords read MOCCA snapshot
+#' @export
+#' @examples
+#' read_ext_snap()
+
 read_ext_snap <- function(path="./")
 {   #Read MOCCA extended snapshots
     cmd <- paste("ls ", path, "extsnap_*.dat", sep = "")
