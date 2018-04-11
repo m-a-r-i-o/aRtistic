@@ -1,4 +1,13 @@
-# impute NAs and Infs with column median
+#' impute function
+#'
+#' This function imputes NAs and Infs with column median
+#' @param df a dataframe
+#' @keywords impute, NA, Inf
+#' @export
+#' @examples
+#' a <- sample(c(NA, 3, 7), 100, replace = TRUE)
+#' b <- runif(100)
+#' impute(data.frame(a,b))
 impute <- function(df)
 {
     for(i in 1:ncol(df))
