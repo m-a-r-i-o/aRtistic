@@ -1,5 +1,13 @@
-#This script plots the snapshots in feature space, showing where the snaps
-#with a black hole cluster in feature space and where they do not
+#' justplot function
+#'
+#' This function plots the snapshots in feature space, showing where the snaps
+#' with a black hole cluster in feature space and where they do not
+
+#' @param dataset the features+label dataset
+#' @keywords feature space, plot
+#' @export
+#' @examples
+#' justplot(dataset)
 
 justplot <- function(dataset)
 {

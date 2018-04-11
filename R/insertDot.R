@@ -1,3 +1,8 @@
+#' insertDot function
+#'
+#' This function is used internally
+#' @param u u
+
 insertDot <- function(u)
 {
   uu <- unlist(strsplit(u[2], split=""))

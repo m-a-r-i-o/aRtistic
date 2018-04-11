@@ -1,3 +1,11 @@
+#' massDist function
+#'
+#' This function plots the mass distribution of heaviest black holes
+#' @keywords mass distribution
+#' @export
+#' @examples
+#' massDist()
+
 massDist <- function()
 {
     library("ggplot2")

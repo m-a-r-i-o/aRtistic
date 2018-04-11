@@ -1,4 +1,14 @@
-# generates a transparent version of the given color (for shaded areas)
+#' lightn function
+#'
+#' This function generates a transparent version of the given color
+#' for plotting shaded areas
+#' @param colo input color
+#' @keywords color, transparent, shaded area
+#' @export
+#' @examples
+#' lightn("orange") #transparent orange
+
+# 
 lightn <- function(colo)
 {
     lcolo <- col2rgb(colo, alpha = F)
