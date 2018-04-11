@@ -4,7 +4,7 @@
 \alias{FOVselect}
 \title{FOVselect function}
 \usage{
-FOVselect(x, y, xi_FOV, alpha_FOV, beta_FOV, rh)
+FOVselect(x, y, xi_FOV = 0, alpha_FOV = 1, beta_FOV = 1, rh)
 }
 \arguments{
 \item{x}{vector with x positions of all stars}

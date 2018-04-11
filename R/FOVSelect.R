@@ -12,7 +12,7 @@
 #' @examples
 #' FOVselect(x, y, 0, 1, 1, sqrt(median(x*x + y*y))) #square FOV, centered
 
-FOVselect <- function(x, y, xi_FOV, alpha_FOV, beta_FOV, rh)
+FOVselect <- function(x, y, xi_FOV = 0, alpha_FOV = 1, beta_FOV = 1, rh)
 {   
     x_FOV <- xi_FOV*rh
     a_FOV <- alpha_FOV*rh
