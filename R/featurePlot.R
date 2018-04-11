@@ -1,3 +1,13 @@
+#' function feature_plot
+#'
+#' This function plots features from a surface brightness profile
+#' @param rbin (mid?) radii of bins
+#' @param ds surface brightness at a given bin
+#' @keywords features, surface brightness
+#' @export
+#' @examples
+#' feature_plot(rbin, ds)
+
 feature_plot <- function(rbin, ds)
 {
     pdf("featureplot.pdf")

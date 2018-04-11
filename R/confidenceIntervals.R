@@ -1,4 +1,10 @@
-confi <- function(j, colo)
+#' confi function
+#'
+#' This function plots ROC curves and their confidence intervals
+#' @keywords ROC
+#' @export
+
+confi <- function(j, colo, ncurves, ncROC, ROC_tables, shadedsigma)
 {
     iTPR <- j + ncurves*(0:(floor(ncROC/ncurves)-1))
     iFPR <- 1 + j + ncurves*(0:(floor(ncROC/ncurves)-1))

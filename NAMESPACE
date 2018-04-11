@@ -3,3 +3,6 @@
 export(AUC)
 export(AUCsd)
 export(completeness)
+export(confi)
+export(confusion)
+export(feature_plot)
