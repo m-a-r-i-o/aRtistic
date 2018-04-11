@@ -2,6 +2,7 @@
 
 export(AUC)
 export(AUCsd)
+export(FOVselect)
 export(completeness)
 export(confi)
 export(confusion)
