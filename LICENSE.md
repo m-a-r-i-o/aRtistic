@@ -1,5 +1,5 @@
 # License
-The prose, course text, slide layouts, class outlines, diagrams, HTML, CSS, and Markdown code in the set of educational materials located in this repository are licensed as _CC BY 3.0_. The Octocat, GitHub logo and other already-copyrighted and already-reserved trademarks and images are not covered by this license.
+The materials located in this repository are licensed as _CC BY 3.0_. GitHub logo and other already-copyrighted and already-reserved trademarks and images are not covered by this license.
 
 ------------------------
 
