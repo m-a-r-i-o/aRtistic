@@ -3,6 +3,7 @@
 export(AUC)
 export(AUCsd)
 export(FOVselect)
+export(SetupROCPlot)
 export(SimpleROC)
 export(UniqueIdentifierFromPath)
 export(completeness)
