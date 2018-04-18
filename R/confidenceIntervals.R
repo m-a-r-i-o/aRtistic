@@ -4,7 +4,7 @@
 #' @keywords ROC
 #' @export
 
-confi <- function(j, colo, ncurves, ncROC, ROC_tables, shadedsigma)
+confi <- function(j, colo="black", ncurves=8, ncROC, ROC_tables, shadedsigma=2)
 {
     iTPR <- j + ncurves*(0:(floor(ncROC/ncurves)-1))
     iFPR <- 1 + j + ncurves*(0:(floor(ncROC/ncurves)-1))
