@@ -1,7 +1,6 @@
 #' make_ROC_tables function
 #'
-#' This puts ROCs read from ROC files together in a table
-#' @param none
+#' This function puts ROCs read from ROC files together in a table
 #' @keywords ROC
 #' @export
 #' @examples

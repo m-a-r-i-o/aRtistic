@@ -7,7 +7,7 @@
 make_ROC_tables()
 }
 \description{
-This puts ROCs read from ROC files together in a table
+This function puts ROCs read from ROC files together in a table
 }
 \examples{
 make_ROC_tables()
