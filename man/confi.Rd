@@ -4,7 +4,7 @@
 \alias{confi}
 \title{confi function}
 \usage{
-confi(j, colo, ncurves, ncROC, ROC_tables, shadedsigma)
+confi(j, colo = "black", ncurves = 8, ncROC, ROC_tables, shadedsigma = 2)
 }
 \description{
 This function plots ROC curves and their confidence intervals
