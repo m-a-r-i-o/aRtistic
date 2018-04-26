@@ -18,7 +18,7 @@ UniqueIdentifierFromPath <- function(DirtyPath)
  {
     SplittedPath <- SplittedPath[1:(l-1)]
  }
- if(SplittedPath[1] == ".") SplittedPath[1] <- "/data5MM/pasquato/run_1" #hardcoded!!! BAAAAD
+ if(SplittedPath[1] == ".") SplittedPath[1] <- system("pwd", intern = T)
  CleanPath <- paste(SplittedPath, collapse = "/")
  return(CleanPath)
 }
