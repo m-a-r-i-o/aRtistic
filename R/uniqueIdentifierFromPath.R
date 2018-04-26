@@ -23,6 +23,9 @@ UniqueIdentifierFromPath <- function(DirtyPath)
  ziniFolder <- grepl("zini", SplittedPath)
  ziniIndex <- (1:length(SplittedPath))[ziniFolder]
  SplittedPath <- SplittedPath[(ziniIndex-1):length(SplittedPath)]
+ if(grepl("700k", SplittedPath[1])) SplittedPath[1] <- "n=700000"
+ if(grepl("400k", SplittedPath[1])) SplittedPath[1] <- "n=400000"
+ if(grepl("100k", SplittedPath[1])) SplittedPath[1] <- "n=100000"
  CleanPath <- paste(SplittedPath, collapse = "/")
  return(CleanPath)
 }
