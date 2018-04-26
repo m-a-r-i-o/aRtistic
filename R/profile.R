@@ -19,7 +19,7 @@ profile <- function(r, m, profbins, feature.plot=FALSE)
     rmax <- tapply(r, rc, max)
     rbin <- tapply(r, rc, median) #calculate the median radius of the bins
     As <- pi*(rmax*rmax - rmin*rmin)
-    ms <- tapply(m, rc, sum)
+    ms <- tapply(m, rc, length) #total number of stars; tapply(m, rc, sum) returns the total mass
     ds <- ms/As #density in the bin
     if(feature.plot)
     {
