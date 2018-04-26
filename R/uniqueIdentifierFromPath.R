@@ -18,7 +18,11 @@ UniqueIdentifierFromPath <- function(DirtyPath)
  {
     SplittedPath <- SplittedPath[1:(l-1)]
  }
- if(SplittedPath[1] == ".") SplittedPath[1] <- system("pwd", intern = T)
+#find the folder named zini=something in the path
+#include in the path only the folder above and all folders within
+ ziniFolder <- grepl("zini", SplittedPath)
+ ziniIndex <- (1:length(SplittedPath))[ziniFolder]
+ SplittedPath <- SplittedPath[(ziniIndex-1):length(SplittedPath)]
  CleanPath <- paste(SplittedPath, collapse = "/")
  return(CleanPath)
 }
