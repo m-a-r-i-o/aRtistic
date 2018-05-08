@@ -15,7 +15,7 @@ confi <- function(j, colo="black", ncurves=8, ncROC, ROC_tables, shadedsigma=2)
     sdTPR <- shadedsigma*apply(TPRs, 1, sd)
 
     polygon(c(meanFPR, rev(meanFPR)), c(meanTPR - sdTPR, rev(meanTPR + sdTPR)), col = lightn(colo), border = NA)
-    lines(meanFPR, meanTPR, col = colo)
+    lines(meanFPR, meanTPR, col = colo, lwd = 2)
     return(data.frame(FPR=meanFPR, TPR=meanTPR, TPRp=meanTPR + sdTPR, TPRm=meanTPR - sdTPR))
 }
 
