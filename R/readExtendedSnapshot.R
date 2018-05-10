@@ -9,7 +9,7 @@
 
 read_ext_snap <- function(path="./")
 {   #Read MOCCA extended snapshots
-    cmd <- paste("ls ", path, "extsnap_*.dat", sep = "")
+    cmd <- paste("ls ", path, "snap12*.dat", sep = "")
     extended_snapshots <- system(cmd, intern = T)
     if(length(extended_snapshots) > 0)
     {
