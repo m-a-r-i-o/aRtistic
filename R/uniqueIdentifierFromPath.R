@@ -14,7 +14,7 @@ UniqueIdentifierFromPath <- function(DirtyPath)
 {
  SplittedPath <- strsplit(DirtyPath, "/")[[1]]
  l <- length(SplittedPath)
- if(grepl("extsnap", SplittedPath[l]))
+ if(grepl("snap12", SplittedPath[l]))
  {
     SplittedPath <- SplittedPath[1:(l-1)]
  }
