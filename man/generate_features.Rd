@@ -8,7 +8,7 @@ generate_features(path = "./", seed = 37, diagno.on = FALSE,
   cluster.plot = FALSE, incomplete.gray = "#00334D34",
   complete.black = "#12031A", FOV.red = "#A05100", feature.plot = FALSE,
   profbins = 4, xi_FOV = 0, alpha_FOV = 0.5, beta_FOV = 0.5,
-  miscentering = 0, min_visible_type = -1, max_visible_type = 10)
+  miscentering = 0, min_visible_type = -1, max_visible_type = 5)
 }
 \arguments{
 \item{path}{where to look for the MOCCA extended snapshot}
