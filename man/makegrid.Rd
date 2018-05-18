@@ -4,15 +4,17 @@
 \alias{makegrid}
 \title{makegrid function}
 \usage{
-makegrid(df)
+makegrid(df, k = 1)
 }
 \arguments{
 \item{df}{numeric dataframe}
+
+\item{k}{fill factor}
 }
 \description{
 This function takes a numeric dataframe and outputs a random grid of
 points covering the volume spanned by the dataframe in column space
-the number of rows is the same as that of the original dataframe
+the number of rows is k that of the original dataframe
 }
 \examples{
 makegrid(data.frame(u=rnorm(10),v=rnorm(10)))
