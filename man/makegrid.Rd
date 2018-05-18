@@ -4,12 +4,14 @@
 \alias{makegrid}
 \title{makegrid function}
 \usage{
-makegrid(df, k = 1)
+makegrid(df, k = 1, epsi = 0.1)
 }
 \arguments{
 \item{df}{numeric dataframe}
 
 \item{k}{fill factor}
+
+\item{epsi}{generate random numbers in the range [(1-epsi)*min, (1+epsi)*max[}
 }
 \description{
 This function takes a numeric dataframe and outputs a random grid of
